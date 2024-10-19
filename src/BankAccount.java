@@ -40,7 +40,9 @@ public class BankAccount {
                     int choice2=sc.nextInt();
 
                     while (choice2!=4){
-                    if (choice2==4) { break; }
+                    if (choice2==4) {
+                        System.out.println("thanks for using a valued customer ");
+                        break; }
                     else if (choice2==0) { System.out.println("Account Deleted "); Login.Delete(Found) ;        }                                            // this function is not implemented yet ; it deletes the account
                     else if (choice2==1) { System.out.println("Balence is : "+Login.getBalance(Found)); }       // this function is not implemented yet ; it returns the balence of account
                     else if (choice2==2) { System.out.println("enter amount to credit : "); int credit=sc.nextInt(); Login.updateBalenceCredit(Found,credit); }    // this function is not implemented yet ; it updates credit balence of account
